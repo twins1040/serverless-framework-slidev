@@ -3,14 +3,12 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+# background: https://cover.sli.dev
 # some information about your slides, markdown enabled
-title: Welcome to Slidev
+title: 코드로 서버리스 API 인프라 구축하기
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  Python 함수는 만들 수 있는데, 이것을 어떻게 배포하고 사용할 수 있을까요?
+  이 발표에서는 AWS Lambda와 API Gateway를 사용하여 서버리스 API 인프라를 구축하는 방법을 알아봅니다.
 # apply any unocss classes to the current slide
 class: text-center
 # https://sli.dev/custom/highlighters.html
