@@ -17,7 +17,7 @@ highlighter: shiki
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations#slide-transitions
-transition: slide-left
+transition: fade-out
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
 ---
@@ -27,17 +27,25 @@ mdc: true
 with Serverless Framework
 
 
-<!--
-안녕하세요. 천명욱입니다.
--->
+---
+layout: two-cols
+layoutClass: gap-16
+---
+
+# 목차
+
+::right::
+
+<Toc minDepth="1" maxDepth="1"></Toc>
+
 
 ---
-transition: fade-out
 ---
 
 # 멋진 함수를 만들었는데...
 
 <br>
+<div v-click>
 ```python
 def is_prime(number):
     if number <= 1:
@@ -57,10 +65,14 @@ def is_prime(number):
 
     return True
 ```
+</div>
 
-<!--
-Here is another comment.
--->
+
+---
+---
+
+# 필요한 것은?
+
 
 ---
 transition: slide-up
@@ -88,25 +100,6 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
   alt=""
 />
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: two-cols
-layoutClass: gap-16
----
-
-# Table of contents
-
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
-
-::right::
-
-<Toc v-click minDepth="1" maxDepth="2"></Toc>
 
 ---
 layout: image-right
