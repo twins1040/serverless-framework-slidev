@@ -87,7 +87,134 @@ web API로 만들어서 공유하고 싶다.
 <br>
 <h3 v-click> FastAPI? </h3>
 <br>
-<h3 v-click> 나는 그냥 내가 만든 함수 하나 전달하고 싶은건데... </h3>
+<h3 v-click>새로운 프레임워크를 배워야하네... </h3>
+
+
+---
+
+# 배포도 해야 한다고? 서버를 임대해야 해?
+<br>
+<h3 v-click>AWS EC2 인스턴스 만들고</h3>
+<br>
+<h3 v-click>SSH 로 접속해서 소스 코드 받고</h3>
+<br>
+<h3 v-click>nginx 설치 하고 WSGI 연결해주고</h3>
+<br>
+<h3 v-click>계속 켜두면 비용 청구되니 다 쓰고 EC2 꺼줘야하고..</h3>
+
+
+---
+layout: center
+---
+
+# 나는 그냥 내가 만든 함수 하나 알리고 싶은건데... 
+
+
+---
+layout: center
+---
+
+# 좋은 방법 없을까?
+
+
+---
+layout: image-right
+image: /Amazon_Lambda_architecture_logo.png
+---
+
+# AWS Lambda 를 써보자
+<br>
+
+### 장점
+<v-clicks>
+
+- 간단한 함수에 적합하다.
+- 프레임워크를 배우지 않아도 된다.
+- 호출 한 만큼만 비용이 청구된다.
+
+</v-clicks>
+
+
+---
+layout: image-right
+image: /create-lambda.png
+backgroundSize: contain
+---
+
+# 아직도 뭔가 번거롭다...
+<br>
+
+<v-clicks>
+
+- 초기 설정도 많고 콘솔에서 하나하나 입력하기 너무 귀찮다.
+- 매번 코드 업로드 해야 하는 것도 번거롭다.
+- api gateway 설정도 해야하고...
+
+</v-clicks>
+
+
+---
+
+# 만약
+<br>
+
+<v-clicks>
+
+- 설정 파일 하나로 필요한 모든 인프라를 생성할 수 있다면?
+- 코드를 업로드 하지 않아도 자동으로 배포된다면?
+- 모든 인프라를 다시 명령어 한번으로 삭제할 수 있다면?
+
+</v-clicks>
+
+
+---
+layout: image
+image: /social-card-serverless-framework.png
+backgroundSize: contain
+---
+
+
+---
+
+# Serverless Framework 설치
+<br>
+
+```bash
+npm install serverless -g
+```
+
+---
+layout: image-right
+image: /create-project.png
+backgroundSize: contain
+transition: slide-up
+---
+
+# 새로운 프로젝트 만들기
+<br>
+
+```bash
+serverless
+```
+
+
+---
+
+![Local Image](/create-project-2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---
