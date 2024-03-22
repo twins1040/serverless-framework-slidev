@@ -185,7 +185,7 @@ npm install serverless -g
 
 ---
 layout: image-right
-image: /create-project.png
+image: /create-project-4.png
 backgroundSize: contain
 transition: slide-up
 ---
@@ -200,9 +200,142 @@ serverless
 
 ---
 
-![Local Image](/create-project-2.png)
+> 주의: 적절한 권한을 가진 access key 설정이 필요.
+
+![Local Image](/create-project-3.png)
 
 
+---
+
+# 디렉터리 구조
+<br>
+
+````md magic-move
+```bash
+math $ tree
+.
+├── README.md
+├── handler.py
+└── serverless.yml
+```
+```bash
+math $ tree
+.
+├── README.md
+├── handler.py
+├── prime.py
+└── serverless.yml
+```
+````
+
+
+---
+transition: slide-up
+---
+
+# serverless.yml
+<br>
+
+````md magic-move
+```yaml {*|9|10|11|12-14|*}
+service: math
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
+```
+```yaml
+service: math
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  prime:
+    handler: handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
+```
+```yaml
+service: math
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  prime:
+    handler: handler.handle
+    events:
+      - httpApi:
+          path: /
+          method: get
+```
+````
+
+---
+
+# handler.py
+<br>
+
+````md magic-move
+```python {*|4|*}
+import json
+
+
+def hello(event, context):
+    body = {
+        "message": "Go Serverless v3.0! Your function executed successfully!",
+        "input": event,
+    }
+
+    response = {"statusCode": 200, "body": json.dumps(body)}
+
+    return response
+```
+```python
+import json
+
+
+def handle(event, context):
+    body = {
+        "message": "Go Serverless v3.0! Your function executed successfully!",
+        "input": event,
+    }
+
+    response = {"statusCode": 200, "body": json.dumps(body)}
+
+    return response
+```
+```python
+import json
+
+from prime import is_prime
+
+
+def handle(event, context):
+    number = int(event["queryStringParameters"]["number"])
+    
+    if is_prime(number):
+        return f"{number} is prime!"
+
+    return f"{number} is not prime!"
+```
+````
 
 
 
