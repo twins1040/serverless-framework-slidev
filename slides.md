@@ -40,7 +40,6 @@ layoutClass: gap-16
 
 
 ---
----
 
 # 멋진 함수를 만들었는데...
 
@@ -69,9 +68,26 @@ def is_prime(number):
 
 
 ---
+layout: center
 ---
 
-# 필요한 것은?
+# 다른 사람이 사용했으면 좋겠다!
+
+다른 사람이 사용할 수 있도록 배포하고 싶다.
+web API로 만들어서 공유하고 싶다.
+
+
+---
+
+# API 는 어떻게 만들지?
+<br>
+<h3 v-click> Django? </h3>
+<br>
+<h3 v-click> Flask? </h3>
+<br>
+<h3 v-click> FastAPI? </h3>
+<br>
+<h3 v-click> 나는 그냥 내가 만든 함수 하나 전달하고 싶은건데... </h3>
 
 
 ---
