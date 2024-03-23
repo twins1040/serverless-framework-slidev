@@ -102,14 +102,12 @@ layout: center
 ---
 
 # API 는 어떻게 만들지?
-<br>
-<h3 v-click> Django? </h3>
-<br>
-<h3 v-click> Flask? </h3>
-<br>
-<h3 v-click> FastAPI? </h3>
-<br>
-<h3 v-click>새로운 프레임워크를 배워야하네... </h3>
+<v-clicks>
+    <img src="/Django-Logo.png" absolute w-70 top-20 left-20 />
+    <img src="/flask.png" absolute w-70 top-40 left-80 />
+    <img src="/fastapi.avif" absolute w-70 top-80 left-140 />
+    <h3 absolute bottom-16>새로운 프레임워크를 배워야하네... </h3>
+</v-clicks>
 
 
 ---
