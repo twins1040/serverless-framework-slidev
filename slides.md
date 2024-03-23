@@ -78,6 +78,9 @@ def is_prime(number):
     return True
 ```
 </div>
+<v-click>
+    <img src="/smirk.webp" alt="smirk" absolute h-32 w-32 bottom-40 right-40 />
+</v-click>
 
 
 ---
@@ -86,9 +89,15 @@ layout: center
 
 # 다른 사람이 사용했으면 좋겠다!
 
-다른 사람이 사용할 수 있도록 배포하고 싶다.
-web API로 만들어서 공유하고 싶다.
+<v-click>
+  배포하고 싶다.
+  <br>
+  API로 만들고 싶다.
+</v-click>
 
+<v-click>
+    <img src="/swagger.png" absolute w-100 bottom-20 right-20 />
+</v-click>
 
 ---
 
