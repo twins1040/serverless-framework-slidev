@@ -139,7 +139,8 @@ layout: center
 
 ---
 layout: image-right
-image: /Amazon_Lambda_architecture_logo.png
+image: /lambda-intro.png
+backgroundSize: contain
 ---
 
 # AWS Lambda 를 써보자
