@@ -20,27 +20,15 @@ drawings:
 transition: fade-out
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
+layout: center
 ---
 
-## 코드로 서버리스 API 인프라 구축하기
+# 코드로 서버리스 API 인프라 구축하기
 
 with Serverless Framework
 
+천명욱
 
----
-layout: image-left
-image: /me.jpg
-backgroundSize: contain
----
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-# 안녕하세요! 천명욱입니다.
 
 
 ---
@@ -433,4 +421,6 @@ class: text-center
 ---
 
 # 감사합니다
+
+twins1040@gmail.com
 
